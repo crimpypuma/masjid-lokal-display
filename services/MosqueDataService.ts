@@ -7,7 +7,7 @@ import { MosqueMetadataType, MosqueData } from "@/types/MosqueDataType"
 import { find } from "lodash"
 import moment from "moment"
 
-const MOSQUE_API_ENDPOINT = process.env.MOSQUE_API_ENDPOINT ?? ""
+const MOSQUE_API_ENDPOINT = process.env.MOSQUE_API_ENDPOINT ?? "https://api.mosque.tech/mosque-data/1q41xb_6stHpSdxYHABYEDpUSszYm7SHq2nj3so9WIx4"
 const DAY_FOR_UPCOMING = parseInt(process.env?.UPCOMING_PRAYER_DAY ?? "3")
 
 export async function getMosqueData(): Promise<MosqueData> {
